@@ -1,0 +1,92 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/mucha-comida-chatarra-mesa-nutricion-poco-saludable-ia-generativa_77190-15011.avif);
+
+}
+
+.Contenier-Buttons {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ShowAll,
+.Show-Discount,
+.Vegan-Burguer,
+.Sum-Total {
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+}
+
+li {
+    background-color: rgba(242, 120, 44, 0.995);
+    border: 5px solid red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+p {
+    color: #ffffffff;
+    font-weight: 800;
+}
+
+.Price {
+    font-weight: 900;
+    color: gold;
+}
+
+@media screen and (max-width:1029px) {
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 150px 150px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .ShowAll,
+    .Show-Discount,
+    .Vegan-Burguer,
+    .Sum-Total {
+        background-color: red;
+        width:80px;
+        height:38px;
+        font-size:15px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}
